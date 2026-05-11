@@ -5,6 +5,9 @@ on:
     branches: [ main, master ]
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,12 +22,15 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: List files to debug structure
+        run: find . -name "gradlew" 2>/dev/null && ls -la SpendSense/ || echo "SpendSense folder not found"
+
       - name: Grant execute permission to gradlew
         run: chmod +x SpendSense/gradlew
 
       - name: Build Debug APK
         working-directory: SpendSense
-        run: ./gradlew assembleDebug
+        run: ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
