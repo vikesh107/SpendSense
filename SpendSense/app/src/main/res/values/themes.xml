@@ -26,10 +26,5 @@
         <item name="strokeWidth">0dp</item>
     </style>
 
-    <!-- Splash/Launch screen -->
-    <style name="Theme.SpendSense.Splash" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/bg_primary</item>
-        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
-        <item name="postSplashScreenTheme">@style/Theme.SpendSense</item>
-    </style>
+
 </resources>
