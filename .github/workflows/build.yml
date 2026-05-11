@@ -20,13 +20,14 @@ jobs:
           distribution: 'temurin'
 
       - name: Grant execute permission to gradlew
-        run: chmod +x gradlew
+        run: chmod +x SpendSense/gradlew
 
       - name: Build Debug APK
+        working-directory: SpendSense
         run: ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v3
         with:
           name: SpendSense-Debug-APK
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: SpendSense/app/build/outputs/apk/debug/app-debug.apk
