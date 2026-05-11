@@ -22,15 +22,18 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: List files to debug structure
-        run: find . -name "gradlew" 2>/dev/null && ls -la SpendSense/ || echo "SpendSense folder not found"
+      - name: Install Gradle 8.1
+        run: |
+          wget -q https://services.gradle.org/distributions/gradle-8.1-bin.zip
+          unzip -q gradle-8.1-bin.zip
+          echo "$PWD/gradle-8.1/bin" >> $GITHUB_PATH
 
-      - name: Grant execute permission to gradlew
-        run: chmod +x SpendSense/gradlew
+      - name: Accept Android SDK licenses
+        run: yes | $ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager --licenses || true
 
       - name: Build Debug APK
         working-directory: SpendSense
-        run: ./gradlew assembleDebug --stacktrace
+        run: gradle assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
