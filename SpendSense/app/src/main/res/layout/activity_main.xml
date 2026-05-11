@@ -22,7 +22,6 @@
             android:background="@color/surface_dark"
             app:navigationIconTint="@color/text_primary" />
 
-        <!-- Stats Summary Strip -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,7 +32,6 @@
             android:paddingBottom="16dp"
             android:paddingTop="4dp">
 
-            <!-- Today -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -47,8 +45,7 @@
                     android:layout_height="wrap_content"
                     android:text="Today"
                     android:textColor="@color/text_secondary"
-                    android:textSize="11sp"
-                    android:fontFamily="sans-serif-medium" />
+                    android:textSize="11sp" />
                 <TextView
                     android:id="@+id/tvTodayTotal"
                     android:layout_width="wrap_content"
@@ -59,7 +56,6 @@
                     android:fontFamily="sans-serif-bold" />
             </LinearLayout>
 
-            <!-- This Month -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -73,8 +69,7 @@
                     android:layout_height="wrap_content"
                     android:text="This Month"
                     android:textColor="@color/text_secondary"
-                    android:textSize="11sp"
-                    android:fontFamily="sans-serif-medium" />
+                    android:textSize="11sp" />
                 <TextView
                     android:id="@+id/tvMonthTotal"
                     android:layout_width="wrap_content"
@@ -85,7 +80,6 @@
                     android:fontFamily="sans-serif-bold" />
             </LinearLayout>
 
-            <!-- Total All Time -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -98,8 +92,7 @@
                     android:layout_height="wrap_content"
                     android:text="All Time"
                     android:textColor="@color/text_secondary"
-                    android:textSize="11sp"
-                    android:fontFamily="sans-serif-medium" />
+                    android:textSize="11sp" />
                 <TextView
                     android:id="@+id/tvTotalSpent"
                     android:layout_width="wrap_content"
@@ -112,7 +105,6 @@
 
         </LinearLayout>
 
-        <!-- Search Bar -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -158,7 +150,6 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- Main Content -->
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefresh"
         android:layout_width="match_parent"
@@ -177,7 +168,6 @@
                 android:paddingTop="8dp"
                 android:paddingBottom="80dp" />
 
-            <!-- Empty State -->
             <LinearLayout
                 android:id="@+id/tvEmpty"
                 android:layout_width="match_parent"
@@ -213,7 +203,6 @@
 
             </LinearLayout>
 
-            <!-- Import Progress -->
             <LinearLayout
                 android:id="@+id/layoutImportStatus"
                 android:layout_width="match_parent"
@@ -245,9 +234,8 @@
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-    <!-- Transaction count FAB area -->
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/fabCount"
+        android:id="@+id/tvCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
@@ -256,7 +244,6 @@
         android:textColor="@color/surface_dark"
         app:iconTint="@color/surface_dark"
         app:backgroundTint="@color/accent_blue"
-        android:id="@+id/tvCount"
         android:text="0 transactions" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
