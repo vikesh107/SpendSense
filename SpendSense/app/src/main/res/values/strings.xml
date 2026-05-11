@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SpendSense</string>
+    <string name="notification_listener_label">SpendSense Transaction Monitor</string>
+    <string name="pref_first_launch">pref_first_launch</string>
+    <string name="pref_import_done">pref_import_done</string>
+</resources>
