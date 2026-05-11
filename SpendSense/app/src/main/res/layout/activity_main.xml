@@ -103,6 +103,7 @@
                         android:textColor="@color/accent_blue"
                         android:textSize="11sp"
                         android:fontFamily="sans-serif-medium"
+                        android:letterSpacing="0.1"
                         android:layout_marginBottom="12dp" />
 
                     <!-- Bank Row -->
@@ -113,20 +114,12 @@
                         android:orientation="horizontal"
                         android:paddingBottom="10dp"
                         android:gravity="center_vertical">
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="Bank"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="13sp" />
-                        <TextView
-                            android:id="@+id/tvDetailBank"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@color/text_primary"
-                            android:textSize="14sp"
-                            android:fontFamily="sans-serif-medium" />
+                        <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+                            android:text="Bank" android:textColor="@color/text_secondary" android:textSize="13sp"/>
+                        <TextView android:id="@+id/tvDetailBank" android:layout_width="0dp"
+                            android:layout_height="wrap_content" android:layout_weight="1"
+                            android:textColor="@color/text_primary" android:textSize="14sp"
+                            android:fontFamily="sans-serif-medium"/>
                     </LinearLayout>
 
                     <!-- Merchant Row -->
@@ -137,20 +130,12 @@
                         android:orientation="horizontal"
                         android:paddingBottom="10dp"
                         android:gravity="center_vertical">
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="Merchant"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="13sp" />
-                        <TextView
-                            android:id="@+id/tvDetailMerchant"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@color/text_primary"
-                            android:textSize="14sp"
-                            android:fontFamily="sans-serif-medium" />
+                        <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+                            android:text="Merchant" android:textColor="@color/text_secondary" android:textSize="13sp"/>
+                        <TextView android:id="@+id/tvDetailMerchant" android:layout_width="0dp"
+                            android:layout_height="wrap_content" android:layout_weight="1"
+                            android:textColor="@color/text_primary" android:textSize="14sp"
+                            android:fontFamily="sans-serif-medium"/>
                     </LinearLayout>
 
                     <!-- Method Row -->
@@ -160,20 +145,12 @@
                         android:orientation="horizontal"
                         android:paddingBottom="10dp"
                         android:gravity="center_vertical">
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="Method"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="13sp" />
-                        <TextView
-                            android:id="@+id/tvDetailMethod"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@color/text_primary"
-                            android:textSize="14sp"
-                            android:fontFamily="sans-serif-medium" />
+                        <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+                            android:text="Method" android:textColor="@color/text_secondary" android:textSize="13sp"/>
+                        <TextView android:id="@+id/tvDetailMethod" android:layout_width="0dp"
+                            android:layout_height="wrap_content" android:layout_weight="1"
+                            android:textColor="@color/text_primary" android:textSize="14sp"
+                            android:fontFamily="sans-serif-medium"/>
                     </LinearLayout>
 
                     <!-- Account Row -->
@@ -184,19 +161,11 @@
                         android:orientation="horizontal"
                         android:paddingBottom="10dp"
                         android:gravity="center_vertical">
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="Account"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="13sp" />
-                        <TextView
-                            android:id="@+id/tvDetailAccount"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@color/text_primary"
-                            android:textSize="14sp"
+                        <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+                            android:text="Account" android:textColor="@color/text_secondary" android:textSize="13sp"/>
+                        <TextView android:id="@+id/tvDetailAccount" android:layout_width="0dp"
+                            android:layout_height="wrap_content" android:layout_weight="1"
+                            android:textColor="@color/text_primary" android:textSize="14sp"
                             android:fontFamily="monospace" />
                     </LinearLayout>
 
@@ -208,20 +177,12 @@
                         android:orientation="horizontal"
                         android:paddingBottom="10dp"
                         android:gravity="center_vertical">
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="Ref ID"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="13sp" />
-                        <TextView
-                            android:id="@+id/tvDetailRef"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@color/text_primary"
-                            android:textSize="13sp"
-                            android:fontFamily="monospace" />
+                        <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+                            android:text="Ref ID" android:textColor="@color/text_secondary" android:textSize="13sp"/>
+                        <TextView android:id="@+id/tvDetailRef" android:layout_width="0dp"
+                            android:layout_height="wrap_content" android:layout_weight="1"
+                            android:textColor="@color/text_primary" android:textSize="13sp"
+                            android:fontFamily="monospace"/>
                     </LinearLayout>
 
                     <!-- Source Row -->
@@ -231,19 +192,11 @@
                         android:orientation="horizontal"
                         android:paddingBottom="10dp"
                         android:gravity="center_vertical">
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="Source"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="13sp" />
-                        <TextView
-                            android:id="@+id/tvDetailSource"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@color/text_primary"
-                            android:textSize="13sp" />
+                        <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+                            android:text="Source" android:textColor="@color/text_secondary" android:textSize="13sp"/>
+                        <TextView android:id="@+id/tvDetailSource" android:layout_width="0dp"
+                            android:layout_height="wrap_content" android:layout_weight="1"
+                            android:textColor="@color/text_primary" android:textSize="13sp"/>
                     </LinearLayout>
 
                     <!-- Sender Row -->
@@ -253,20 +206,12 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:gravity="center_vertical">
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="Sender"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="13sp" />
-                        <TextView
-                            android:id="@+id/tvDetailSender"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@color/text_primary"
-                            android:textSize="13sp"
-                            android:fontFamily="monospace" />
+                        <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+                            android:text="Sender" android:textColor="@color/text_secondary" android:textSize="13sp"/>
+                        <TextView android:id="@+id/tvDetailSender" android:layout_width="0dp"
+                            android:layout_height="wrap_content" android:layout_weight="1"
+                            android:textColor="@color/text_primary" android:textSize="13sp"
+                            android:fontFamily="monospace"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -295,6 +240,7 @@
                         android:textColor="@color/accent_blue"
                         android:textSize="11sp"
                         android:fontFamily="sans-serif-medium"
+                        android:letterSpacing="0.1"
                         android:layout_marginBottom="10dp" />
 
                     <TextView
@@ -314,7 +260,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Copy Message"
+                        android:text="📋 Copy Message"
                         android:textColor="@color/accent_blue"
                         android:textSize="13sp"
                         app:backgroundTint="@android:color/transparent"
@@ -329,7 +275,7 @@
                 android:id="@+id/btnDelete"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Delete Transaction"
+                android:text="🗑 Delete Transaction"
                 android:textColor="@color/accent_red"
                 app:backgroundTint="@android:color/transparent"
                 app:strokeColor="@color/accent_red"
